@@ -1,42 +1,29 @@
 #### CCPaySDK
 ------
-**1.版本说明**
 
-|日期|版本|修改内容|修改人|备注|
-|:----    |:-------    |-- -|------      |
-|04.16|1.0|集成支付宝、微信App支付|李健| 无|
-|05.17|1.1|新增银联App支付|李健| 无|
+**1.三方库依赖**
 
-**2.三方库依赖**
-
-2.1 CocoaPods导入三方依赖库
+1.1 CocoaPods导入三方依赖库
 ```objective-c
 pod 'AlipaySDK-iOS'
 pod 'WechatOpenSDK'
 pod 'MJExtension'
 ```
-2.2 手动引入银联依赖库
+1.2 手动引入银联依赖库
 ```objective-c
 UPPaymentControl.h
 libPaymentControl.a
 ```
-2.3 Library Binary With Libraries引入依赖
+1.3 Library Binary With Libraries引入依赖
 ```objective-c
 CFNetwork.framework
 SystemConfiguration.framework
 libz.tdb
 ```
 
-**3.Xcode配置**
+**2.代码示例**
 
-3.1 在info.plist文件配置URL Types
-![Info.plist中URL Types配置](http://doc.chinacaring.com:4999/Public/Uploads/2019-05-17/5cde7fca9b029.png "Info.plist中URL Types配置")
-3.2 在info.plist文件配置LSApplicationQueriesSchemes
-![配置LSApplicationQueriesSchemes](http://doc.chinacaring.com:4999/Public/Uploads/2019-05-17/5cde8240d3bc6.png "配置LSApplicationQueriesSchemes")
-
-**4.代码示例**
-
-4.1 SDK回调Code类型
+2.1 SDK回调Code类型
 ```objective-c
 typedef NS_ENUM(NSUInteger, CCPayErrorCode) {
     CCPayErrorCodeSuccess                 = 0,        //  支付成功
@@ -49,7 +36,7 @@ typedef NS_ENUM(NSUInteger, CCPayErrorCode) {
 };
 ```
 
-4.2 方法
+2.2 方法
 
 ```objective-c
 /** SDK版本号*/
@@ -92,20 +79,20 @@ typedef NS_ENUM(NSUInteger, CCPayErrorCode) {
                completion:(void (^)(BOOL success, NSError *error))completion;
 ```
 
-4.3.1 注册微信AppId
+2.3.1 注册微信AppId
 
 ```objective-c
 //  若要支持微信支付，则必须注册微信支付
 [[CCPayManager sharedManager] registerWXAppId:@"wx0000000000000000"];
 ```
 
-4.3.2 获取SDK版本号
+2.3.2 获取SDK版本号
 
 ```objective-c
 NSString *version = [CCPayManager sharedManager].version;
 ```
 
-4.3.3 处理OpenUrl
+2.3.3 处理OpenUrl
 ```objective-c
 - (BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url {
     return [[CCPaySDK sharedSDK] openPayURL:url];
@@ -119,7 +106,7 @@ NSString *version = [CCPayManager sharedManager].version;
 }
 ```
 
-4.3.4 支付示例
+2.3.4 支付示例
 
 ```objective-c
 - (IBAction)aliPayTouchUpInside:(id)sender {
