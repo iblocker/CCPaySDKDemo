@@ -1,0 +1,483 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5D5F768096D37810A8194337 /* libPods-CCPaySDKDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D1D4FE598DB39AFB595F649 /* libPods-CCPaySDKDemo.a */; };
+		8437AC67228D575500A8A144 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8437AC66228D575500A8A144 /* AppDelegate.m */; };
+		8437AC6A228D575500A8A144 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8437AC69228D575500A8A144 /* ViewController.m */; };
+		8437AC6D228D575500A8A144 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8437AC6B228D575500A8A144 /* Main.storyboard */; };
+		8437AC6F228D575700A8A144 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8437AC6E228D575700A8A144 /* Assets.xcassets */; };
+		8437AC72228D575700A8A144 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8437AC70228D575700A8A144 /* LaunchScreen.storyboard */; };
+		8437AC75228D575700A8A144 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8437AC74228D575700A8A144 /* main.m */; };
+		8437AC80228D581900A8A144 /* libPaymentControl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8437AC7F228D581900A8A144 /* libPaymentControl.a */; };
+		8437AC83228D582700A8A144 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8437AC82228D582600A8A144 /* SystemConfiguration.framework */; };
+		8437AC85228D582C00A8A144 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8437AC84228D582C00A8A144 /* CFNetwork.framework */; };
+		8437AC87228D583200A8A144 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 8437AC86228D583100A8A144 /* libz.tbd */; };
+		8437AC8B228D596C00A8A144 /* CCPaySDK.m in Sources */ = {isa = PBXBuildFile; fileRef = 8437AC8A228D596C00A8A144 /* CCPaySDK.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0D1D4FE598DB39AFB595F649 /* libPods-CCPaySDKDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CCPaySDKDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		20F3517CAFBCF012644E31C0 /* Pods-CCPaySDKDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CCPaySDKDemo.release.xcconfig"; path = "Target Support Files/Pods-CCPaySDKDemo/Pods-CCPaySDKDemo.release.xcconfig"; sourceTree = "<group>"; };
+		8437AC62228D575500A8A144 /* CCPaySDKDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CCPaySDKDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8437AC65228D575500A8A144 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		8437AC66228D575500A8A144 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		8437AC68228D575500A8A144 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		8437AC69228D575500A8A144 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		8437AC6C228D575500A8A144 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8437AC6E228D575700A8A144 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8437AC71228D575700A8A144 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8437AC73228D575700A8A144 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8437AC74228D575700A8A144 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8437AC7D228D581900A8A144 /* UPPaymentControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UPPaymentControl.h; sourceTree = "<group>"; };
+		8437AC7F228D581900A8A144 /* libPaymentControl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libPaymentControl.a; sourceTree = "<group>"; };
+		8437AC82228D582600A8A144 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		8437AC84228D582C00A8A144 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		8437AC86228D583100A8A144 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		8437AC89228D596C00A8A144 /* CCPaySDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CCPaySDK.h; sourceTree = "<group>"; };
+		8437AC8A228D596C00A8A144 /* CCPaySDK.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CCPaySDK.m; sourceTree = "<group>"; };
+		AF774793CCBFDDFA1E7424A9 /* Pods-CCPaySDKDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CCPaySDKDemo.debug.xcconfig"; path = "Target Support Files/Pods-CCPaySDKDemo/Pods-CCPaySDKDemo.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8437AC5F228D575500A8A144 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8437AC87228D583200A8A144 /* libz.tbd in Frameworks */,
+				8437AC85228D582C00A8A144 /* CFNetwork.framework in Frameworks */,
+				8437AC83228D582700A8A144 /* SystemConfiguration.framework in Frameworks */,
+				8437AC80228D581900A8A144 /* libPaymentControl.a in Frameworks */,
+				5D5F768096D37810A8194337 /* libPods-CCPaySDKDemo.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8437AC59228D575500A8A144 = {
+			isa = PBXGroup;
+			children = (
+				8437AC64228D575500A8A144 /* CCPaySDKDemo */,
+				8437AC63228D575500A8A144 /* Products */,
+				8437AC81228D582600A8A144 /* Frameworks */,
+				CF1CC441A108743CB1C29A33 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		8437AC63228D575500A8A144 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8437AC62228D575500A8A144 /* CCPaySDKDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8437AC64228D575500A8A144 /* CCPaySDKDemo */ = {
+			isa = PBXGroup;
+			children = (
+				8437AC88228D595600A8A144 /* CCPaySDK */,
+				8437AC7B228D581900A8A144 /* Unionpay */,
+				8437AC65228D575500A8A144 /* AppDelegate.h */,
+				8437AC66228D575500A8A144 /* AppDelegate.m */,
+				8437AC68228D575500A8A144 /* ViewController.h */,
+				8437AC69228D575500A8A144 /* ViewController.m */,
+				8437AC6B228D575500A8A144 /* Main.storyboard */,
+				8437AC6E228D575700A8A144 /* Assets.xcassets */,
+				8437AC70228D575700A8A144 /* LaunchScreen.storyboard */,
+				8437AC73228D575700A8A144 /* Info.plist */,
+				8437AC74228D575700A8A144 /* main.m */,
+			);
+			path = CCPaySDKDemo;
+			sourceTree = "<group>";
+		};
+		8437AC7B228D581900A8A144 /* Unionpay */ = {
+			isa = PBXGroup;
+			children = (
+				8437AC7C228D581900A8A144 /* inc */,
+				8437AC7E228D581900A8A144 /* libs */,
+			);
+			path = Unionpay;
+			sourceTree = "<group>";
+		};
+		8437AC7C228D581900A8A144 /* inc */ = {
+			isa = PBXGroup;
+			children = (
+				8437AC7D228D581900A8A144 /* UPPaymentControl.h */,
+			);
+			path = inc;
+			sourceTree = "<group>";
+		};
+		8437AC7E228D581900A8A144 /* libs */ = {
+			isa = PBXGroup;
+			children = (
+				8437AC7F228D581900A8A144 /* libPaymentControl.a */,
+			);
+			path = libs;
+			sourceTree = "<group>";
+		};
+		8437AC81228D582600A8A144 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8437AC86228D583100A8A144 /* libz.tbd */,
+				8437AC84228D582C00A8A144 /* CFNetwork.framework */,
+				8437AC82228D582600A8A144 /* SystemConfiguration.framework */,
+				0D1D4FE598DB39AFB595F649 /* libPods-CCPaySDKDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8437AC88228D595600A8A144 /* CCPaySDK */ = {
+			isa = PBXGroup;
+			children = (
+				8437AC89228D596C00A8A144 /* CCPaySDK.h */,
+				8437AC8A228D596C00A8A144 /* CCPaySDK.m */,
+			);
+			path = CCPaySDK;
+			sourceTree = "<group>";
+		};
+		CF1CC441A108743CB1C29A33 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AF774793CCBFDDFA1E7424A9 /* Pods-CCPaySDKDemo.debug.xcconfig */,
+				20F3517CAFBCF012644E31C0 /* Pods-CCPaySDKDemo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8437AC61228D575500A8A144 /* CCPaySDKDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8437AC78228D575700A8A144 /* Build configuration list for PBXNativeTarget "CCPaySDKDemo" */;
+			buildPhases = (
+				AFE0FFA0AE0235E6C2C03E99 /* [CP] Check Pods Manifest.lock */,
+				8437AC5E228D575500A8A144 /* Sources */,
+				8437AC5F228D575500A8A144 /* Frameworks */,
+				8437AC60228D575500A8A144 /* Resources */,
+				5CDBA9C4F0052AB60DE0F67A /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CCPaySDKDemo;
+			productName = CCPaySDKDemo;
+			productReference = 8437AC62228D575500A8A144 /* CCPaySDKDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8437AC5A228D575500A8A144 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = iBlocker;
+				TargetAttributes = {
+					8437AC61228D575500A8A144 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 8437AC5D228D575500A8A144 /* Build configuration list for PBXProject "CCPaySDKDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8437AC59228D575500A8A144;
+			productRefGroup = 8437AC63228D575500A8A144 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8437AC61228D575500A8A144 /* CCPaySDKDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8437AC60228D575500A8A144 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8437AC72228D575700A8A144 /* LaunchScreen.storyboard in Resources */,
+				8437AC6F228D575700A8A144 /* Assets.xcassets in Resources */,
+				8437AC6D228D575500A8A144 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5CDBA9C4F0052AB60DE0F67A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CCPaySDKDemo/Pods-CCPaySDKDemo-resources.sh",
+				"${PODS_ROOT}/AlipaySDK-iOS/AlipaySDK.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AlipaySDK.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CCPaySDKDemo/Pods-CCPaySDKDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AFE0FFA0AE0235E6C2C03E99 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CCPaySDKDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8437AC5E228D575500A8A144 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8437AC6A228D575500A8A144 /* ViewController.m in Sources */,
+				8437AC75228D575700A8A144 /* main.m in Sources */,
+				8437AC67228D575500A8A144 /* AppDelegate.m in Sources */,
+				8437AC8B228D596C00A8A144 /* CCPaySDK.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		8437AC6B228D575500A8A144 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8437AC6C228D575500A8A144 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8437AC70228D575700A8A144 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8437AC71228D575700A8A144 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8437AC76228D575700A8A144 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		8437AC77228D575700A8A144 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8437AC79228D575700A8A144 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AF774793CCBFDDFA1E7424A9 /* Pods-CCPaySDKDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6L5WW3BGWT;
+				INFOPLIST_FILE = CCPaySDKDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/CCPaySDKDemo/Unionpay/libs",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.chinacaring.CCPaySDKDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8437AC7A228D575700A8A144 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 20F3517CAFBCF012644E31C0 /* Pods-CCPaySDKDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6L5WW3BGWT;
+				INFOPLIST_FILE = CCPaySDKDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/CCPaySDKDemo/Unionpay/libs",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.chinacaring.CCPaySDKDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8437AC5D228D575500A8A144 /* Build configuration list for PBXProject "CCPaySDKDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8437AC76228D575700A8A144 /* Debug */,
+				8437AC77228D575700A8A144 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8437AC78228D575700A8A144 /* Build configuration list for PBXNativeTarget "CCPaySDKDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8437AC79228D575700A8A144 /* Debug */,
+				8437AC7A228D575700A8A144 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8437AC5A228D575500A8A144 /* Project object */;
+}
